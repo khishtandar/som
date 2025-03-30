@@ -1,6 +1,7 @@
 import React from 'react';
 import { Menu, Music, BookOpen, Users, Mail, Phone, Clock, MapPin, ChevronRight, Facebook, Instagram, Youtube } from 'lucide-react';
 import ImageSlider from './components/ImageSlider';
+import ConsultationSection from './components/ConsultationSection';
 import YearlyGallery from './components/YearlyGallery';
 
 function App() {
@@ -94,6 +95,9 @@ function App() {
       {/* Hero Section with Image Slider */}
       <ImageSlider />
 
+      {/* Consultation Section */}
+      <ConsultationSection />
+
       {/* Features */}
       <section className="py-20 px-6 md:px-12 bg-gray-50">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -115,7 +119,7 @@ function App() {
         </div>
       </section>
 
-      {/* Courses */}
+      {/* Our Programs */}
       <section id="courses" className="py-20 px-6 md:px-12">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">Our Programs</h2>
