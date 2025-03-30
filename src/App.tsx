@@ -3,6 +3,7 @@ import { Menu, Music, BookOpen, Users, Mail, Phone, Clock, MapPin, ChevronRight,
 import ImageSlider from './components/ImageSlider';
 import ConsultationSection from './components/ConsultationSection';
 import YearlyGallery from './components/YearlyGallery';
+import ContactForm from './components/ContactForm';
 
 function App() {
   const recitalPhotos = {
@@ -317,103 +318,8 @@ function App() {
         </div>
       </section>
 
-      {/* Contact */}
-      <section id="contact" className="py-20 px-6 md:px-12 bg-gradient-to-b from-white to-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-4 text-center">Get in Touch</h2>
-          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            Ready to start your musical journey? Contact us for lesson inquiries, scheduling, or any questions you may have.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="bg-white p-8 rounded-2xl shadow-sm">
-              <h3 className="text-2xl font-semibold mb-6">Studio Information</h3>
-              <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className="bg-blue-100 p-3 rounded-full">
-                    <Phone className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <p className="font-medium">Phone</p>
-                    <p className="text-gray-600">+1 (647) 774-6250</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="bg-blue-100 p-3 rounded-full">
-                    <Mail className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <p className="font-medium">Email</p>
-                    <p className="text-gray-600">schoolofmusic.ca@gmail.com</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="bg-blue-100 p-3 rounded-full">
-                    <MapPin className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <p className="font-medium">Location</p>
-                    <p className="text-gray-600">Aurora, Ontario</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <form className="bg-white p-8 rounded-2xl shadow-sm space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="Enter your full name"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
-                />
-              </div>
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  placeholder="Enter your phone number"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="Enter your email"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
-                />
-              </div>
-              <div>
-                <label htmlFor="program" className="block text-sm font-medium text-gray-700 mb-2">Program of Interest</label>
-                <select
-                  id="program"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
-                >
-                  <option value="">Select a program</option>
-                  <option value="clarinet">Clarinet Studies</option>
-                  <option value="saxophone">Saxophone Studies</option>
-                  <option value="theory">Music Theory</option>
-                  <option value="rcm">RCM Exam Preparation</option>
-                </select>
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  placeholder="Tell us about your musical background and goals"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all resize-none"
-                ></textarea>
-              </div>
-              <button className="w-full bg-blue-600 text-white py-4 rounded-lg hover:bg-blue-700 transition-colors font-medium">
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
+      {/* Contact Form */}
+      <ContactForm />
 
       {/* Footer */}
       <footer className="bg-black text-white py-12 px-6 md:px-12">
