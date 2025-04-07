@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, Music, BookOpen, Users, Mail, Phone, Clock, MapPin, ChevronRight, Facebook, Instagram, Youtube, X } from 'lucide-react';
+import { Menu, Music, BookOpen, Users, Mail, Phone, Clock, MapPin, ChevronRight, Facebook, Instagram, Youtube, X, Mic2 } from 'lucide-react';
 import ImageSlider from './components/ImageSlider';
 import ConsultationSection from './components/ConsultationSection';
 import YearlyGallery from './components/YearlyGallery';
@@ -94,8 +94,7 @@ function App() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex-shrink-0 flex items-center gap-2">
-              <Music className="w-6 h-6 text-blue-600" />
+            <div className="flex-shrink-0 flex items-center">
               <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Sahar Azar Music Studio
               </h1>
@@ -182,7 +181,7 @@ function App() {
               <p className="text-gray-600">Tailored instruction to meet your individual goals and learning style</p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
-              <Music className="w-12 h-12 mb-4 text-blue-600" />
+              <Mic2 className="w-12 h-12 mb-4 text-blue-600" />
               <h3 className="text-xl font-semibold mb-2">Performance Opportunities</h3>
               <p className="text-gray-600">Regular recitals and concert performances to build confidence</p>
             </div>
