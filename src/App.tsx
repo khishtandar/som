@@ -333,7 +333,7 @@ function App() {
                       <span className="group-hover:text-blue-600 transition-colors duration-300">Performance technique coaching</span>
                   </li>
                 </ul>
-                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -415,7 +415,7 @@ function App() {
                     </a>
                   </div>
                 </div>
-              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -433,7 +433,7 @@ function App() {
 
       {/* Testimonials */}
         <section id="testimonials" className="py-20 px-6 md:px-12 bg-gradient-to-b from-white to-blue-50">
-          <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold mb-4 text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Testimonials</h2>
             <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">What my students say about their learning experience</p>
             <div className="relative">
@@ -542,8 +542,8 @@ function App() {
                           <p className="text-sm text-gray-500">Parent</p>
                         </div>
                       </div>
-                    </div>
-                  </div>
+          </div>
+        </div>
 
                   <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 w-[400px]">
                     <div className="relative">
@@ -562,9 +562,9 @@ function App() {
                           <footer className="font-semibold text-blue-600">Galaxy C</footer>
                           <p className="text-sm text-gray-500">Adult Beginner</p>
                         </div>
-                      </div>
-                    </div>
-                  </div>
+                </div>
+                </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -580,7 +580,7 @@ function App() {
               }
             `}
           </style>
-        </section>
+      </section>
 
         {/* Contact Form */}
         <ContactForm />
