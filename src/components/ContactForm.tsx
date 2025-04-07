@@ -97,7 +97,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <p className="font-medium text-sm md:text-base">Email</p>
-                    <p className="text-gray-600 text-sm md:text-base break-all">saharazar.musicstudio@gmail.com</p>
+                    <p className="text-gray-600 text-sm md:text-base break-all">sahar.musicstudio@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">

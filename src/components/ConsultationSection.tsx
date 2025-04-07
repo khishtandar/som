@@ -18,7 +18,7 @@ const ConsultationSection = () => {
             Start Your Musical Journey Today
           </h2>
           <p className="text-lg text-gray-600 mb-10">
-            Book a free 15-minute consultation to discuss your musical goals or reach out through our contact form.
+            Book a free 30-minute trial lesson or reach out through our contact form.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button
@@ -26,7 +26,7 @@ const ConsultationSection = () => {
               className="flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-colors shadow-lg"
             >
               <Phone className="w-5 h-5" />
-              <span>Book Free Consultation</span>
+              <span>Book A Free Trial Lesson</span>
             </button>
             <button
               onClick={scrollToContact}

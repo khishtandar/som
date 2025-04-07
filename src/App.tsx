@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, Music, BookOpen, Users, Mail, Phone, Clock, MapPin, ChevronRight, Facebook, Instagram, Youtube, X, Mic2 } from 'lucide-react';
+import { Menu, BookOpen, Users, Mail, Phone, Clock, MapPin, ChevronRight, Facebook, Instagram, Youtube, X, Piano } from 'lucide-react';
 import ImageSlider from './components/ImageSlider';
 import ConsultationSection from './components/ConsultationSection';
 import YearlyGallery from './components/YearlyGallery';
@@ -19,70 +19,72 @@ function App() {
   };
 
   const recitalPhotos = {
+    2024: [
+      {
+        url: "/2024-1.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2024-2.jpg",
+        caption: "Recital 2024"
+      }
+    ],
     2023: [
       {
-        url: "https://images.unsplash.com/photo-1514119412350-e174d90d280e?auto=format&fit=crop&w=800&q=80",
-        caption: "Winter Recital 2023"
+        url: "/2023-1.jpg",
+        caption: "Recital 2023"
       },
       {
-        url: "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=800&q=80",
-        caption: "Spring Showcase 2023"
+        url: "/2023-2.jpg",
+        caption: "Recital 2023"
       },
       {
-        url: "https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=800&q=80",
-        caption: "Summer Concert 2023"
+        url: "/2023-3.jpg",
+        caption: "Recital 2023"
       },
       {
-        url: "https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=800&q=80",
-        caption: "Fall Performance 2023"
+        url: "/2023-4.jpg",
+        caption: "Recital 2023"
       },
       {
-        url: "https://images.unsplash.com/photo-1461784121038-f088ca1e7714?auto=format&fit=crop&w=800&q=80",
-        caption: "Holiday Recital 2023"
+        url: "/2023-5.jpg",
+        caption: "Recital 2023"
+      },
+      {
+        url: "/2023-6.jpg",
+        caption: "Recital 2023"
       }
     ],
     2022: [
       {
-        url: "https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=800&q=80",
-        caption: "Holiday Performance 2022"
+        url: "/2022-1.jpg",
+        caption: "Recital 2022"
       },
       {
-        url: "https://images.unsplash.com/photo-1461784121038-f088ca1e7714?auto=format&fit=crop&w=800&q=80",
-        caption: "Spring Recital 2022"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=800&q=80",
-        caption: "Summer Festival 2022"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1621367507503-dd9b1e66a2c1?auto=format&fit=crop&w=800&q=80",
-        caption: "Fall Concert 2022"
+        url: "/2022-2.jpg",
+        caption: "Recital 2022"
       },
       {
         url: "https://images.unsplash.com/photo-1514119412350-e174d90d280e?auto=format&fit=crop&w=800&q=80",
-        caption: "Winter Gala 2022"
-      }
-    ],
-    2021: [
-      {
-        url: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=800&q=80",
-        caption: "Virtual Concert 2021"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1621367507503-dd9b1e66a2c1?auto=format&fit=crop&w=800&q=80",
-        caption: "Outdoor Performance 2021"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1514119412350-e174d90d280e?auto=format&fit=crop&w=800&q=80",
-        caption: "Spring Showcase 2021"
+        caption: "Recital 2022"
       },
       {
         url: "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=800&q=80",
-        caption: "Summer Recital 2021"
+        caption: "Recital 2022"
       },
       {
         url: "https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=800&q=80",
-        caption: "Fall Concert 2021"
+        caption: "Recital 2022"
+      }
+    ],
+    2019: [
+      {
+        url: "/2019-1.jpg",
+        caption: "Recital 2019"
+      },
+      {
+        url: "/2019-2.jpg",
+        caption: "Recital 2019"
       }
     ]
   };
@@ -117,6 +119,12 @@ function App() {
                   </span>
                 </button>
               ))}
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
+              >
+                Book A Free Trial Lesson
+              </button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -150,6 +158,12 @@ function App() {
                      section === 'gallery' ? 'Gallery' : 'Contact Us'}
                   </button>
                 ))}
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="block w-full text-center px-3 py-2 mt-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
+                >
+                  Book A Free Trial Lesson
+                </button>
               </div>
             </div>
           )}
@@ -181,7 +195,7 @@ function App() {
               <p className="text-gray-600">Tailored instruction to meet your individual goals and learning style</p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
-              <Mic2 className="w-12 h-12 mb-4 text-blue-600" />
+              <Piano className="w-12 h-12 mb-4 text-blue-600" />
               <h3 className="text-xl font-semibold mb-2">Performance Opportunities</h3>
               <p className="text-gray-600">Regular recitals and concert performances to build confidence</p>
             </div>
@@ -219,9 +233,6 @@ function App() {
                       <span className="group-hover:text-blue-600 transition-colors duration-300">RCM examination preparation</span>
                     </li>
                   </ul>
-                  <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-full hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300">
-                    Learn More
-                  </button>
                 </div>
               </div>
               
@@ -236,7 +247,7 @@ function App() {
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-semibold mb-4 text-blue-600">Saxophone Studies</h3>
-                  <ul className="space-y-3 mb-6">
+                  <ul className="space-y-3">
                     <li className="flex items-center gap-2 group">
                       <ChevronRight className="w-5 h-5 text-blue-600 transform group-hover:translate-x-1 transition-transform duration-300" />
                       <span className="group-hover:text-blue-600 transition-colors duration-300">Jazz and classical training</span>
@@ -250,9 +261,6 @@ function App() {
                       <span className="group-hover:text-blue-600 transition-colors duration-300">Performance preparation</span>
                     </li>
                   </ul>
-                  <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-full hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300">
-                    Learn More
-                  </button>
                 </div>
               </div>
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500">
@@ -266,7 +274,7 @@ function App() {
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-semibold mb-4 text-blue-600">Flexible Learning Options</h3>
-                  <ul className="space-y-3 mb-6">
+                  <ul className="space-y-3">
                     <li className="flex items-center gap-2 group">
                       <ChevronRight className="w-5 h-5 text-blue-600 transform group-hover:translate-x-1 transition-transform duration-300" />
                       <span className="group-hover:text-blue-600 transition-colors duration-300">Online lessons via Zoom/Skype</span>
@@ -280,23 +288,19 @@ function App() {
                       <span className="group-hover:text-blue-600 transition-colors duration-300">Hybrid learning available</span>
                     </li>
                   </ul>
-                  <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-full hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300">
-                    Learn More
-                  </button>
                 </div>
               </div>
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500">
                 <div className="relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1514119412350-e174d90d280e?auto=format&fit=crop&w=800&q=80" 
-                    alt="RCM Exam Preparation"
-                    className="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-500"
+                    src="/rcm-logo.jpg" 
+                    alt="Royal Conservatory of Music"
+                    className="w-full h-64 object-contain bg-white p-8"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-semibold mb-4 text-blue-600">RCM Exam Preparation</h3>
-                  <ul className="space-y-3 mb-6">
+                  <ul className="space-y-3">
                     <li className="flex items-center gap-2 group">
                       <ChevronRight className="w-5 h-5 text-blue-600 transform group-hover:translate-x-1 transition-transform duration-300" />
                       <span className="group-hover:text-blue-600 transition-colors duration-300">Structured exam preparation</span>
@@ -310,9 +314,6 @@ function App() {
                       <span className="group-hover:text-blue-600 transition-colors duration-300">Performance technique coaching</span>
                     </li>
                   </ul>
-                  <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-full hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300">
-                    Learn More
-                  </button>
                 </div>
               </div>
             </div>
@@ -384,6 +385,16 @@ function App() {
                   <p className="leading-relaxed hover:text-gray-900 transition-colors duration-300">
                     She has studied with Prof. David Bourque as her primary teacher since 2012.
                   </p>
+                  <div className="mt-8">
+                    <a 
+                      href="https://www.rcmusic.com/teachers/s/sahar-azar" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="inline-block px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
+                    >
+                      View RCM Sahar Profile
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -453,7 +464,6 @@ function App() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div>
                 <div className="flex items-center gap-2 mb-4">
-                  <Music className="w-6 h-6" />
                   <span className="text-xl font-semibold">Sahar Azar Music Studio</span>
                 </div>
                 <p className="text-gray-400">Nurturing musical excellence through dedicated instruction</p>
@@ -482,7 +492,7 @@ function App() {
                   <a href="#" className="text-gray-400 hover:text-white">
                     <Facebook className="w-6 h-6" />
                   </a>
-                  <a href="#" className="text-gray-400 hover:text-white">
+                  <a href="https://www.instagram.com/saharazar_clarinet_sax_teacher" className="text-gray-400 hover:text-white">
                     <Instagram className="w-6 h-6" />
                   </a>
                   <a href="#" className="text-gray-400 hover:text-white">
