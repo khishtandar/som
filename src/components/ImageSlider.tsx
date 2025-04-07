@@ -10,7 +10,7 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    url: "/rcm-verified.jpg",
+    url: "/rcm-verified2.jpg",
     title: "RCM Verified Teacher",
     description: "verified by the Royal Conservatory of Music, offering structured and recognized music education.",
     position: "center 50%"
@@ -52,7 +52,7 @@ const ImageSlider: React.FC = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 8000);
+    }, 7000);
 
     return () => clearInterval(timer);
   }, []);
