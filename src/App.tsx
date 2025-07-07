@@ -38,6 +38,64 @@ function App() {
   };
 
   const recitalPhotos = {
+    2025: [
+      {
+        url: "/2025-1.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2025-2.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2025-3.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2025-4.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2025-5.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2025-6.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2025-7.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2025-8.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2025-9.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2025-10.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2025-11.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2025-12.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2025-13.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2025-14.jpg",
+        caption: "Recital 2024"
+      }
+    ],
     2024: [
       {
         url: "/2024-1.jpg",
@@ -140,6 +198,16 @@ function App() {
               <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Sahar Azar Music Studio
               </h1>
+              {/* Animated Instagram icon with encouragement */}
+              <a
+                href="https://www.instagram.com/saharazar_clarinet_sax_teacher"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center group ml-4"
+              >
+                <Instagram className="w-6 h-6 text-gray-600 group-hover:text-pink-500 animate-bounce" />
+                <span className="ml-2 text-sm text-pink-600 font-semibold hidden lg:inline animate-pulse">Follow me on Instagram!</span>
+              </a>
             </div>
 
             {/* Desktop Navigation */}
@@ -186,6 +254,18 @@ function App() {
           {isMenuOpen && (
             <div className="md:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1 bg-white/90 backdrop-blur-sm border-t">
+                {/* Animated Instagram icon with encouragement */}
+                <div className="flex justify-center mb-2">
+                  <a
+                    href="https://www.instagram.com/saharazar_clarinet_sax_teacher"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center group"
+                  >
+                    <Instagram className="w-6 h-6 text-gray-600 group-hover:text-pink-500 animate-bounce" />
+                    <span className="ml-2 text-sm text-pink-600 font-semibold animate-pulse">Follow me on Instagram!</span>
+                  </a>
+                </div>
                 {['hero', 'programs', 'about', 'gallery', 'contact'].map((section) => (
                   <button
                     key={section}
@@ -392,9 +472,9 @@ function App() {
                   </p>
                   <ul className="list-none space-y-2 pl-4">
                     {[
-                      "University of Toronto (U of T) Wind Symphony",
-                      "U of T Wind Ensemble",
-                      "U of T Clarinet Choir",
+                      "University of Toronto (UofT) Wind Symphony",
+                      "UofT Wind Ensemble",
+                      "UofT Clarinet Choir",
                       "Markham Symphony Orchestra"
                     ].map((item, index) => (
                       <li key={index} className="flex items-center gap-2 group">
