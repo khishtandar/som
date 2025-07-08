@@ -298,6 +298,18 @@ function App() {
           <ImageSlider />
         </section>
 
+        {/* Recital 2025 Banner */}
+        <section className="bg-gradient-to-r from-pink-500 to-purple-600 py-6 px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <button
+              onClick={() => scrollToSection('gallery')}
+              className="text-white text-lg md:text-xl font-semibold hover:scale-105 transform transition-all duration-300 animate-pulse"
+            >
+               Click here to view photos from the 2025 Recital! 
+            </button>
+          </div>
+        </section>
+
         {/* Consultation Section */}
         <ConsultationSection />
 
