@@ -41,59 +41,59 @@ function App() {
     2025: [
       {
         url: "/2025-1.jpg",
-        caption: "Recital 2024"
+        caption: "Recital 2025"
       },
       {
         url: "/2025-2.jpg",
-        caption: "Recital 2024"
+        caption: "Recital 2025"
       },
       {
         url: "/2025-3.jpg",
-        caption: "Recital 2024"
+        caption: "Recital 2025"
       },
       {
         url: "/2025-4.jpg",
-        caption: "Recital 2024"
+        caption: "Recital 2025"
       },
       {
         url: "/2025-5.jpg",
-        caption: "Recital 2024"
+        caption: "Recital 2025"
       },
       {
         url: "/2025-6.jpg",
-        caption: "Recital 2024"
+        caption: "Recital 2025"
       },
       {
         url: "/2025-7.jpg",
-        caption: "Recital 2024"
+        caption: "Recital 2025"
       },
       {
         url: "/2025-8.jpg",
-        caption: "Recital 2024"
+        caption: "Recital 2025"
       },
       {
         url: "/2025-9.jpg",
-        caption: "Recital 2024"
+        caption: "Recital 2025"
       },
       {
         url: "/2025-10.jpg",
-        caption: "Recital 2024"
+        caption: "Recital 2025"
       },
       {
         url: "/2025-11.jpg",
-        caption: "Recital 2024"
+        caption: "Recital 2025"
       },
       {
         url: "/2025-12.jpg",
-        caption: "Recital 2024"
+        caption: "Recital 2025"
       },
       {
         url: "/2025-13.jpg",
-        caption: "Recital 2024"
+        caption: "Recital 2025"
       },
       {
         url: "/2025-14.jpg",
-        caption: "Recital 2024"
+        caption: "Recital 2025"
       }
     ],
     2024: [
