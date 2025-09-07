@@ -104,6 +104,42 @@ function App() {
       {
         url: "/2024-2.jpg",
         caption: "Recital 2024"
+      },
+      {
+        url: "/2024-3.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2024-4.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2024-5.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2024-6.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2024-7.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2024-8.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2024-9.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2024-10.jpg",
+        caption: "Recital 2024"
+      },
+      {
+        url: "/2024-11.jpg",
+        caption: "Recital 2024"
       }
     ],
     2023: [
@@ -130,6 +166,70 @@ function App() {
       {
         url: "/2023-6.jpg",
         caption: "Recital 2023"
+      },
+      {
+        url: "/2023-7.jpg",
+        caption: "Recital 2023"
+      },
+      {
+        url: "/2023-8.jpg",
+        caption: "Recital 2023"
+      },
+      {
+        url: "/2023-9.jpg",
+        caption: "Recital 2023"
+      },
+      {
+        url: "/2023-10.jpg",
+        caption: "Recital 2023"
+      },
+      {
+        url: "/2023-11.jpg",
+        caption: "Recital 2023"
+      },
+      {
+        url: "/2023-12.jpg",
+        caption: "Recital 2023"
+      },
+      {
+        url: "/2023-13.jpg",
+        caption: "Recital 2023"
+      },
+      {
+        url: "/2023-14.jpg",
+        caption: "Recital 2023"
+      },
+      {
+        url: "/2023-15.jpg",
+        caption: "Recital 2023"
+      },
+      {
+        url: "/2023-16.jpg",
+        caption: "Recital 2023"
+      },
+      {
+        url: "/2023-17.jpg",
+        caption: "Recital 2023"
+      },
+      {
+        url: "/2023-18.jpg",
+        caption: "Recital 2023"
+      },
+      {
+        url: "/2023-19.jpg",
+        caption: "Recital 2023"
+      },
+      {
+        url: "/2023-20.jpg",
+        caption: "Recital 2023"
+      },
+      {
+        url: "/2023-21.jpg",
+        caption: "Recital 2023"
+      },
+      {
+        url: "/2023-22.jpg",
+        caption: "Recital 2023"
       }
     ],
     2022: [
@@ -140,6 +240,90 @@ function App() {
       {
         url: "/2022-2.jpg",
         caption: "Recital 2022"
+      },
+      {
+        url: "/2022-3.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-4.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-5.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-6.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-7.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-8.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-9.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-10.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-11.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-12.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-13.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-14.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-15.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-16.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-17.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-18.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-19.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-20.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-21.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-22.jpg",
+        caption: "Recital 2022"
+      },
+      {
+        url: "/2022-23.jpg",
+        caption: "Recital 2022"
       }
     ],
     2019: [
@@ -149,6 +333,38 @@ function App() {
       },
       {
         url: "/2019-2.jpg",
+        caption: "Recital 2019"
+      },
+      {
+        url: "/2019-3.jpg",
+        caption: "Recital 2019"
+      },
+      {
+        url: "/2019-4.jpg",
+        caption: "Recital 2019"
+      },
+      {
+        url: "/2019-5.jpg",
+        caption: "Recital 2019"
+      },
+      {
+        url: "/2019-6.jpg",
+        caption: "Recital 2019"
+      },
+      {
+        url: "/2019-7.jpg",
+        caption: "Recital 2019"
+      },
+      {
+        url: "/2019-8.jpg",
+        caption: "Recital 2019"
+      },
+      {
+        url: "/2019-9.jpg",
+        caption: "Recital 2019"
+      },
+      {
+        url: "/2019-10.jpg",
         caption: "Recital 2019"
       }
     ]
