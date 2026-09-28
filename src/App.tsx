@@ -38,6 +38,108 @@ function App() {
   };
 
   const recitalPhotos = {
+    2026: [
+      {
+        url: "/2026-1.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-2.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-3.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-4.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-5.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-6.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-7.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-8.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-9.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-10.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-11.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-12.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-13.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-14.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-15.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-16.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-17.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-18.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-19.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-20.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-20.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-21.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-22.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-23.jpg",
+        caption: "Recital 2026"
+      },
+      {
+        url: "/2026-24.jpg",
+        caption: "Recital 2026"
+      }
+    ],
     2025: [
       {
         url: "/2025-1.jpg",
