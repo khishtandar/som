@@ -623,7 +623,7 @@ function App() {
               onClick={() => scrollToSection('gallery')}
               className="text-white text-lg md:text-xl font-semibold hover:scale-105 transform transition-all duration-300 animate-pulse"
             >
-               Click here to view photos from the 2025 Recital! 
+               Click here to view photos from the 2026 Recital! 
             </button>
           </div>
         </section>
