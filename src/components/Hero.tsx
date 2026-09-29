@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { ArrowRight, CalendarDays, ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
+import { ArrowRight, CalendarDays, ChevronLeft, ChevronRight, Mail, Sparkles } from 'lucide-react';
 import { BOOKING_URL, LATEST_RECITAL_YEAR, LOCATION, SLIDES } from '../data/content';
 
 const SLIDE_MS = 7000;
@@ -74,9 +74,9 @@ const Hero = () => {
               <CalendarDays className="h-5 w-5" />
               Book a free 30-min trial
             </a>
-            <a href="#programs" className="btn-ghost px-7 py-4 text-white hover:bg-white/10">
-              Explore programs
-              <ArrowRight className="h-5 w-5" />
+            <a href="#contact" className="btn-ghost px-7 py-4 text-white hover:bg-white/10">
+              <Mail className="h-5 w-5" />
+              Contact me
             </a>
           </div>
         </div>
