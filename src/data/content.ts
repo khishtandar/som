@@ -6,11 +6,12 @@ export const PHONE_LINK = 'tel:+16477746250';
 export const EMAIL = 'sahar.musicstudio@gmail.com';
 export const LOCATION = 'Aurora, Ontario';
 
+// In page order.
 export const NAV_LINKS = [
+  { id: 'gallery', label: 'Gallery' },
   { id: 'programs', label: 'Programs' },
   { id: 'about', label: 'About Sahar' },
   { id: 'testimonials', label: 'Testimonials' },
-  { id: 'gallery', label: 'Gallery' },
   { id: 'contact', label: 'Contact' },
 ];
 

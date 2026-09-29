@@ -26,9 +26,9 @@ const FEATURES = [
   },
 ];
 
-const Highlights = () => (
-  <section className="relative bg-cream px-6 pb-24">
-    {/* Stats card overlapping the hero */}
+// Stats card overlapping the bottom of the hero; part of the first screen, so it stays directly under it.
+export const Stats = () => (
+  <section className="relative bg-white px-6">
     <div className="relative z-10 mx-auto -mt-14 max-w-5xl">
       <div className="grid grid-cols-2 divide-ink/10 overflow-hidden rounded-3xl bg-white shadow-xl shadow-ink/5 ring-1 ring-ink/5 md:grid-cols-4 md:divide-x">
         {STATS.map((stat) => (
@@ -39,8 +39,12 @@ const Highlights = () => (
         ))}
       </div>
     </div>
+  </section>
+);
 
-    <div className="mx-auto mt-20 grid max-w-6xl gap-6 md:grid-cols-3">
+export const Features = () => (
+  <section className="bg-cream px-6 py-24">
+    <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
       {FEATURES.map(({ icon: Icon, title, text }, i) => (
         <Reveal key={title} delay={i * 120}>
           <div className="group h-full rounded-3xl border border-ink/5 bg-white/60 p-8 transition duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-xl hover:shadow-ink/5">
@@ -55,5 +59,3 @@ const Highlights = () => (
     </div>
   </section>
 );
-
-export default Highlights;

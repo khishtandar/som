@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Highlights from './components/Highlights';
+import { Features, Stats } from './components/Highlights';
 import Programs from './components/Programs';
 import About from './components/About';
 import Testimonials from './components/Testimonials';
@@ -17,11 +17,12 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <Highlights />
+        <Stats />
+        <Gallery />
+        <Features />
         <Programs />
         <About />
         <Testimonials />
-        <Gallery />
         <Faq />
         <ConsultationSection />
         <ContactForm />
