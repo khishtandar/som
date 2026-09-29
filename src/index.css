@@ -80,6 +80,46 @@
   animation-play-state: paused;
 }
 
+/* Phones: no hover to pause the marquee, so make it a swipeable, snapping carousel instead */
+@media (max-width: 639px) {
+  .marquee {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 1.5rem;
+    padding-inline: 1.5rem;
+    -webkit-mask-image: none;
+    mask-image: none;
+    scrollbar-width: none;
+  }
+
+  .marquee::-webkit-scrollbar {
+    display: none;
+  }
+
+  .marquee-track {
+    animation: none !important;
+  }
+
+  .marquee-track > [aria-hidden='true'] {
+    display: none;
+  }
+
+  .marquee-track > * {
+    scroll-snap-align: start;
+  }
+}
+
+/* Mobile polish */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+a,
+button,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

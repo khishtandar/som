@@ -21,16 +21,18 @@ const Testimonials = () => (
         title="Testimonials"
         subtitle="What our students and parents say about their learning experience"
       />
+      <p className="-mt-8 mb-6 text-center text-sm text-cream/50 sm:hidden">Swipe to read more →</p>
     </div>
 
-    {/* The list is rendered twice so the marquee loops seamlessly; the copy is hidden from screen readers. */}
+    {/* Desktop: the list is rendered twice so the marquee loops seamlessly (the copy is hidden from screen
+        readers). Phones: index.css turns this into a swipeable carousel and hides the copy. */}
     <div className="marquee relative">
-      <div className="marquee-track flex w-max animate-marquee gap-6 py-4">
+      <div className="marquee-track flex w-max animate-marquee gap-4 py-4 sm:gap-6">
         {[...TESTIMONIALS, ...TESTIMONIALS].map((t, i) => (
           <figure
             key={i}
             aria-hidden={i >= TESTIMONIALS.length}
-            className="flex w-[320px] flex-shrink-0 flex-col rounded-3xl border border-white/10 bg-ink-800/80 p-8 sm:w-[420px]"
+            className="flex w-[82vw] max-w-[340px] flex-shrink-0 flex-col rounded-3xl border border-white/10 bg-ink-800/80 p-6 sm:w-[420px] sm:max-w-none sm:p-8"
           >
             <div className="flex items-center justify-between">
               <Quote className="h-9 w-9 text-brass-400" />

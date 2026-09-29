@@ -11,12 +11,13 @@ const Faq = () => (
       <Reveal>
         <div className="divide-y divide-ink/10 rounded-3xl bg-white px-6 ring-1 ring-ink/5 sm:px-8">
           {FAQS.map((faq) => (
-            <details key={faq.question} className="group py-5">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg font-semibold text-ink [&::-webkit-details-marker]:hidden">
+            <details key={faq.question} className="group">
+              {/* Padding sits on the summary so the whole row is a big tap target */}
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-display text-lg font-semibold text-ink [&::-webkit-details-marker]:hidden">
                 <h3>{faq.question}</h3>
                 <ChevronDown className="h-5 w-5 flex-shrink-0 text-brass-600 transition-transform group-open:rotate-180" />
               </summary>
-              <p className="mt-3 leading-relaxed text-ink/70">{faq.answer}</p>
+              <p className="pb-5 leading-relaxed text-ink/70">{faq.answer}</p>
             </details>
           ))}
         </div>

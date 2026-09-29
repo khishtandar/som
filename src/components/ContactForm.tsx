@@ -100,7 +100,7 @@ const ContactForm = () => {
               Richmond Hill.
             </p>
 
-            <ul className="relative mt-10 space-y-6">
+            <ul className="relative mt-10 space-y-4">
               {contactItems.map(({ icon: Icon, label, value, href }) => (
                 <li key={label} className="flex items-center gap-4">
                   <span className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-white/10 text-brass-300">
@@ -109,7 +109,7 @@ const ContactForm = () => {
                   <span className="min-w-0">
                     <span className="block text-xs uppercase tracking-[0.18em] text-cream/50">{label}</span>
                     {href ? (
-                      <a href={href} className="block break-all font-medium text-cream hover:text-brass-200">
+                      <a href={href} className="block break-all py-2 font-medium text-cream hover:text-brass-200">
                         {value}
                       </a>
                     ) : (

@@ -23,7 +23,7 @@ const Navbar = () => {
         solid ? 'bg-cream/90 shadow-[0_1px_0_rgba(23,22,44,0.08)] backdrop-blur-md' : 'bg-transparent'
       }`}
     >
-      <nav className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
+      <nav className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-3 px-4 sm:px-6">
         <a href="#hero" className="group flex items-center gap-3" onClick={() => setIsMenuOpen(false)}>
           <span
             className={`flex h-10 w-10 items-center justify-center rounded-full transition-colors ${
@@ -74,31 +74,32 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className="flex items-center gap-3 lg:hidden">
+        <div className="flex flex-shrink-0 items-center gap-1 sm:gap-3 lg:hidden">
           <a
             href={INSTAGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Follow Sahar on Instagram"
-            className="instagram-btn px-3.5 py-2 text-sm"
+            className="instagram-btn px-3 py-2.5 text-sm min-[360px]:px-3.5"
           >
             <Instagram className="h-5 w-5" />
-            Follow
+            {/* Icon only on very narrow phones so the bar doesn't crowd */}
+            <span className="hidden min-[360px]:inline">Follow</span>
           </a>
-        <button
-          type="button"
-          onClick={() => setIsMenuOpen((open) => !open)}
-          className={`rounded-full p-2 transition-colors ${solid ? 'text-ink' : 'text-white'}`}
-          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-          aria-expanded={isMenuOpen}
-        >
-          {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
+          <button
+            type="button"
+            onClick={() => setIsMenuOpen((open) => !open)}
+            className={`rounded-full p-2.5 transition-colors ${solid ? 'text-ink' : 'text-white'}`}
+            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={isMenuOpen}
+          >
+            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
       </nav>
 
       {isMenuOpen && (
-        <div className="border-t border-ink/10 bg-cream/95 backdrop-blur-md lg:hidden">
+        <div className="max-h-[calc(100svh-5rem)] overflow-y-auto border-t border-ink/10 bg-cream/95 backdrop-blur-md lg:hidden">
           <div className="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4">
             {NAV_LINKS.map((link) => (
               <a

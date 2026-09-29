@@ -18,10 +18,10 @@ const Footer = () => (
 
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-brass-300">Programs</h4>
-          <ul className="mt-4 space-y-2 text-cream/60">
+          <ul className="mt-3 space-y-1 text-cream/60">
             {PROGRAMS.map((p) => (
               <li key={p.title}>
-                <a href="#programs" className="transition hover:text-cream">
+                <a href="#programs" className="inline-block py-2 transition hover:text-cream">
                   {p.title}
                 </a>
               </li>
@@ -31,10 +31,10 @@ const Footer = () => (
 
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-brass-300">Explore</h4>
-          <ul className="mt-4 space-y-2 text-cream/60">
+          <ul className="mt-3 space-y-1 text-cream/60">
             {NAV_LINKS.map((link) => (
               <li key={link.id}>
-                <a href={`#${link.id}`} className="transition hover:text-cream">
+                <a href={`#${link.id}`} className="inline-block py-2 transition hover:text-cream">
                   {link.label}
                 </a>
               </li>
@@ -44,19 +44,19 @@ const Footer = () => (
 
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-brass-300">Connect</h4>
-          <ul className="mt-4 space-y-3 text-cream/60">
+          <ul className="mt-3 space-y-1 text-cream/60">
             <li>
-              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition hover:text-cream">
+              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 py-2 transition hover:text-cream">
                 <Instagram className="h-4 w-4" /> Instagram
               </a>
             </li>
             <li>
-              <a href={`mailto:${EMAIL}`} className="flex items-center gap-2 transition hover:text-cream">
+              <a href={`mailto:${EMAIL}`} className="flex items-center gap-2 py-2 transition hover:text-cream">
                 <Mail className="h-4 w-4" /> Email
               </a>
             </li>
             <li>
-              <a href={PHONE_LINK} className="flex items-center gap-2 transition hover:text-cream">
+              <a href={PHONE_LINK} className="flex items-center gap-2 py-2 transition hover:text-cream">
                 <Phone className="h-4 w-4" /> {PHONE_DISPLAY}
               </a>
             </li>
