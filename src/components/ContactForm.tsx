@@ -77,7 +77,18 @@ const ContactForm = () => {
 
   const contactItems = [
     { icon: Phone, label: 'Phone', value: PHONE_DISPLAY, href: PHONE_LINK },
-    { icon: Mail, label: 'Email', value: EMAIL, href: `mailto:${EMAIL}` },
+    // <wbr> lets a long address wrap at the "@" on narrow phones instead of mid-word
+    {
+      icon: Mail,
+      label: 'Email',
+      value: (
+        <>
+          {EMAIL.split('@')[0]}
+          <wbr />@{EMAIL.split('@')[1]}
+        </>
+      ),
+      href: `mailto:${EMAIL}`,
+    },
     { icon: MapPin, label: 'Location', value: LOCATION },
   ];
 
@@ -92,7 +103,7 @@ const ContactForm = () => {
 
         <div className="grid overflow-hidden rounded-[2rem] shadow-2xl shadow-ink/10 ring-1 ring-ink/5 lg:grid-cols-[2fr_3fr]">
           {/* Studio Information */}
-          <div className="relative order-2 overflow-hidden bg-ink p-8 text-cream sm:p-10 lg:order-1">
+          <div className="relative order-2 overflow-hidden bg-ink p-6 text-cream sm:p-10 lg:order-1">
             <div className="pointer-events-none absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-brass-400/15 blur-3xl" />
             <h3 className="relative text-2xl font-semibold">Studio Information</h3>
             <p className="relative mt-2 text-cream/60">
@@ -102,14 +113,14 @@ const ContactForm = () => {
 
             <ul className="relative mt-10 space-y-4">
               {contactItems.map(({ icon: Icon, label, value, href }) => (
-                <li key={label} className="flex items-center gap-4">
-                  <span className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-white/10 text-brass-300">
+                <li key={label} className="flex items-center gap-3 sm:gap-4">
+                  <span className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-2xl bg-white/10 text-brass-300 sm:h-12 sm:w-12">
                     <Icon className="h-5 w-5" />
                   </span>
                   <span className="min-w-0">
                     <span className="block text-xs uppercase tracking-[0.18em] text-cream/50">{label}</span>
                     {href ? (
-                      <a href={href} className="block break-all py-2 font-medium text-cream hover:text-brass-200">
+                      <a href={href} className="block break-words py-2 font-medium text-cream hover:text-brass-200">
                         {value}
                       </a>
                     ) : (
@@ -138,7 +149,7 @@ const ContactForm = () => {
           </div>
 
           {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="order-1 space-y-5 bg-white p-8 sm:p-10 lg:order-2">
+          <form onSubmit={handleSubmit} className="order-1 space-y-5 bg-white p-6 sm:p-10 lg:order-2">
             <div className="grid gap-5 sm:grid-cols-2">
               <div>
                 <label htmlFor="name" className="mb-2 block text-sm font-medium text-ink/80">

@@ -10,11 +10,11 @@ export const WHATSAPP_URL = `https://wa.me/16477746250?text=${encodeURIComponent
 )}`;
 export const LOCATION = 'Aurora, Ontario';
 
-// In page order.
+// In page order, except Contact stays last where people expect it.
 export const NAV_LINKS = [
   { id: 'gallery', label: 'Gallery' },
-  { id: 'programs', label: 'Programs' },
   { id: 'about', label: 'About Sahar' },
+  { id: 'programs', label: 'Programs' },
   { id: 'testimonials', label: 'Testimonials' },
   { id: 'contact', label: 'Contact' },
 ];

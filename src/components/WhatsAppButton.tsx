@@ -14,13 +14,13 @@ const WhatsAppButton = () => (
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Message Sahar on WhatsApp"
-    className="group fixed bottom-5 right-5 z-40 flex items-center gap-3 sm:bottom-7 sm:right-7"
+    className="group fixed bottom-4 right-4 z-40 flex items-center gap-3 sm:bottom-7 sm:right-7"
   >
     <span className="pointer-events-none hidden rounded-full bg-white px-4 py-2 text-sm font-semibold text-ink opacity-0 shadow-lg ring-1 ring-ink/5 transition group-hover:opacity-100 sm:block">
       Chat on WhatsApp
     </span>
-    <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg shadow-[#25D366]/40 transition group-hover:-translate-y-0.5 group-hover:shadow-xl group-hover:shadow-[#25D366]/50 group-focus-visible:ring-4 group-focus-visible:ring-[#25D366]/40">
-      <WhatsAppLogo className="h-8 w-8" />
+    <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg shadow-[#25D366]/40 transition group-hover:-translate-y-0.5 group-hover:shadow-xl group-hover:shadow-[#25D366]/50 group-focus-visible:ring-4 group-focus-visible:ring-[#25D366]/40 sm:h-14 sm:w-14">
+      <WhatsAppLogo className="h-7 w-7 sm:h-8 sm:w-8" />
     </span>
   </a>
 );

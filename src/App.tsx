@@ -20,13 +20,13 @@ function App() {
         <Hero />
         <Stats />
         <Gallery />
+        <About />
+        <ContactForm />
         <Features />
         <Programs />
-        <About />
         <Testimonials />
         <Faq />
         <ConsultationSection />
-        <ContactForm />
       </main>
       <Footer />
       <WhatsAppButton />

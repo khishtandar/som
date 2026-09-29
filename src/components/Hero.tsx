@@ -138,7 +138,7 @@ const Hero = () => {
       {/* New-recital pill */}
       <a
         href="#gallery"
-        className="absolute right-6 top-28 hidden items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white ring-1 ring-white/25 backdrop-blur transition hover:bg-white/20 md:inline-flex"
+        className="absolute right-6 top-28 hidden items-center gap-2 rounded-full bg-white/10 px-4 py-2.5 text-sm font-medium text-white ring-1 ring-white/25 backdrop-blur transition hover:bg-white/20 md:inline-flex"
       >
         <Sparkles className="h-4 w-4 text-brass-300" />
         New: {LATEST_RECITAL_YEAR} recital photos
