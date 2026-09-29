@@ -9,6 +9,7 @@ import Faq from './components/Faq';
 import ConsultationSection from './components/ConsultationSection';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
 // Page content (slides, programs, testimonials, FAQs, recital photo counts) lives in src/data/content.ts.
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <ContactForm />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }

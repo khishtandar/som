@@ -4,6 +4,10 @@ export const RCM_PROFILE_URL = 'https://www.rcmusic.com/teachers/s/sahar-azar';
 export const PHONE_DISPLAY = '+1 (647) 774-6250';
 export const PHONE_LINK = 'tel:+16477746250';
 export const EMAIL = 'sahar.musicstudio@gmail.com';
+// wa.me needs the number in international format with no "+", spaces or dashes.
+export const WHATSAPP_URL = `https://wa.me/16477746250?text=${encodeURIComponent(
+  "Hi Sahar, I'm interested in music lessons."
+)}`;
 export const LOCATION = 'Aurora, Ontario';
 
 // In page order.
