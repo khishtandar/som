@@ -2,22 +2,107 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
   }
-  to {
+
+  body {
+    @apply bg-cream font-sans text-ink antialiased;
+  }
+
+  h1, h2, h3 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brass-600;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brass-400 px-6 py-3 font-semibold text-ink shadow-lg shadow-brass-500/20 transition hover:-translate-y-0.5 hover:bg-brass-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-brass-300 focus-visible:ring-offset-2;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-current px-6 py-3 font-semibold transition hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-brass-300 focus-visible:ring-offset-2;
+  }
+
+  .instagram-btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#f56040] via-[#e1306c] to-[#833ab4] font-bold text-white shadow-lg shadow-[#d62976]/30 transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-[#d62976]/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d62976] focus-visible:ring-offset-2;
+    background-size: 200% 100%;
+    background-position: 0% 0%;
+  }
+
+  .instagram-btn:hover {
+    background-position: 100% 0%;
+  }
+
+  .field {
+    @apply w-full rounded-xl border border-cream-200 bg-cream/60 px-4 py-3 text-ink placeholder:text-ink/40 transition focus:border-brass-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brass-300/60;
+  }
+}
+
+/* Reveal-on-scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Hero slide progress bar; its animationend advances the slide */
+@keyframes hero-progress {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.hero-progress {
+  animation-name: hero-progress;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+/* Testimonial marquee: fades at the edges, pauses on hover */
+.marquee {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
+    transition: none;
+  }
+
+  .marquee {
+    overflow-x: auto;
+  }
+
+  .hero-progress {
+    animation: none !important;
+    width: 100%;
+  }
+
+  .marquee-track,
+  .animate-kenburns,
+  .animate-fade-up {
+    animation: none !important;
   }
 }
-
-.animate-fade-in {
-  animation: fadeIn 1s ease-out forwards;
-}
-
-/* Add a delay to each element for a staggered effect */
-.animate-fade-in:nth-child(1) { animation-delay: 0.2s; }
-.animate-fade-in:nth-child(2) { animation-delay: 0.4s; }
-.animate-fade-in:nth-child(3) { animation-delay: 0.6s; }
