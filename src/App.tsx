@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import { Features, Stats } from './components/Highlights';
 import Programs from './components/Programs';
 import About from './components/About';
+import Studio from './components/Studio';
 import Testimonials from './components/Testimonials';
 import Gallery from './components/Gallery';
 import Faq from './components/Faq';
@@ -21,6 +22,7 @@ function App() {
         <Stats />
         <Gallery />
         <About />
+        <Studio />
         <ContactForm />
         <Features />
         <Programs />

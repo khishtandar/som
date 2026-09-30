@@ -34,6 +34,12 @@ export const SLIDES: Slide[] = [
     position: 'center',
   },
   {
+    url: '/studio-1.jpg',
+    title: 'Welcome to the Studio',
+    description: "Private lessons in Sahar's studio in Aurora, Ontario",
+    position: 'center 60%',
+  },
+  {
     url: '/recital-group-2.jpg',
     title: 'Performance Opportunities',
     description: 'Regular recitals and concerts in professional venues',
@@ -86,6 +92,12 @@ export const PROGRAMS = [
     isLogo: true,
     points: ['Structured exam preparation', 'Mock examinations', 'Performance technique coaching'],
   },
+];
+
+// Photos of Sahar's teaching studio (shown in the Studio section)
+export const STUDIO_PHOTOS: Photo[] = [
+  { url: '/studio-1.jpg', alt: "Sahar's music studio in Aurora: upright piano, saxophones on stands and a seating area" },
+  { url: '/studio-2.jpg', alt: "Sahar's music studio in Aurora: lesson chairs, music stand, keyboard and sheet music shelves" },
 ];
 
 export const ENSEMBLES = [
